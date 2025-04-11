@@ -1,0 +1,54 @@
+
+.perfil{
+    background-color: khaki;
+    max-width: fit-content;
+    color:black;
+    font-style: oblique;
+    column-count: 2;
+}
+
+.perfil p{
+    margin: 0; 
+}
+
+.series{    
+    padding-inline-start: 2%;
+    padding-inline-end: 2%;
+    display: block;
+    border: 2px solid black;
+    background: #E67D28;
+    background: linear-gradient(359deg,
+        rgba(230, 125, 40, 1) 4%, 
+        rgba(248, 166, 63, 1) 28%,
+        rgba(252, 176, 69, 1) 91%);
+    max-width: fit-content;
+    margin-bottom: 30px;
+    border-radius: 50px 0px 50px;
+    box-shadow:2px 4px 8px rgba(0,0,0,0.5);
+    box-sizing: border-box;
+}
+
+#tituloPrimero{
+    text-align: center;
+    font-weight: bold;
+    color: darkred;
+}
+
+#datos{
+    font-family: "Source Code Pro", monospace;
+    padding-left: 3%;
+    color: darkgreen;
+    text-decoration: overline;    
+}
+
+a{
+    text-decoration: none;
+    color: cadetblue;
+}
+
+a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+
