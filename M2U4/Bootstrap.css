@@ -1,0 +1,85 @@
+.container-fluid {
+    margin: 0;
+    background: rgb(215, 229, 244);
+    font-size: medium;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: medium;
+}
+
+.titulo1 {
+    display: flex;
+    justify-content: center;
+}
+
+#derecha {
+    text-decoration: none;
+    color: inherit;
+}
+
+#carouselExampleIndicators {
+    height: 430px;
+    overflow: hidden;
+}
+
+.titulo2 {
+    font-size: x-large;
+    padding-left: 20px;
+}
+
+.card .card-img-top {
+    height: 200px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.entrar {
+    text-decoration: none;
+    color: rgb(30, 28, 28);
+}
+
+a:hover {
+    color: rgb(170, 6, 113);
+    text-decoration: underline;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+@media (max-width: 450px) {
+    #carouselExampleIndicators {
+        height: 185px;
+        overflow: hidden;
+    }
+
+    .carousel-inner {
+        height: 100%;
+    }
+
+    .carousel-item {
+        height: 100%;
+    }
+
+    .carousel-item img {
+        max-height: 100%;
+        object-fit: contain;
+        width: auto;
+        display: block;
+        margin: 0 auto;
+    }
+}
