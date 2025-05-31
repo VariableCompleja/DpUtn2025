@@ -44,30 +44,30 @@ boton.addEventListener('click', function () {
 
 /*inicio array aprobados*/
 const alumnos = [
-    { nombre: "Juan Gomez", calificacion: 7 },
-    { nombre: "Pedro Rodriguez", calificacion: 4 },
-    { nombre: "Roxana García", calificacion: 8 },
-    { nombre: "Luciano Lopez", calificacion: 5 },
-    { nombre: "Fernanda Gimenez", calificacion: 6 },
-    { nombre: "Florencia Martinez", calificacion: 10 },
-    { nombre: "Raúl Sanchez", calificacion: 7 },
-    { nombre: "Sandra Figueroa", calificacion: 8 }
+    { nombre: "Juan Gomez", nota: 7 },
+    { nombre: "Pedro Rodriguez", nota: 4 },
+    { nombre: "Roxana García", nota: 8 },
+    { nombre: "Luciano Lopez", nota: 5 },
+    { nombre: "Fernanda Gimenez", nota: 6 },
+    { nombre: "Florencia Martinez", nota: 10 },
+    { nombre: "Raúl Sanchez", nota: 7 },
+    { nombre: "Sandra Figueroa", nota: 8 }
 ];
 
 const lTodos = document.getElementById('todos');
 const lAprobados = document.getElementById('aprobados');
 
-alumnos.forEach(({ nombre, calificacion }) => {
+alumnos.forEach(({ nombre, nota }) => {
     const li = document.createElement('li');
-    li.innerText = `${nombre}: ${calificacion}`;
+    li.innerText = `${nombre}: ${nota}`;
     lTodos.appendChild(li);
 });
 
-const aprobados = alumnos.filter(alumno => alumno.calificacion >= 7);
+const aprobados = alumnos.filter(alumno => alumno.nota >= 7);
 
-aprobados.forEach(({ nombre, calificacion }) => {
+aprobados.forEach(({ nombre, nota }) => {
     const li = document.createElement('li');
-    li.innerText = `${nombre}: ${calificacion}`;
+    li.innerText = `${nombre}: ${nota}`;
     lAprobados.appendChild(li);
 });
 /*fin array aprobados*/
