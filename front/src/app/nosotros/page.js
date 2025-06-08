@@ -1,0 +1,69 @@
+
+export const metadata={
+    title:"Educode::Nosotros",
+    description:"MiNosotros"
+};
+
+export default function Nosotros(){
+    return(
+        <section className="holder">
+            <div className="nosotros">
+            <div className="historia">
+                <h2>Historia</h2>
+                <p>Nacimos hace más de una década, a partir de la inquietud compartida por un grupo de profesionales de
+                    la educación
+                    y la tecnología, convencidos del poder transformador de las herramientas digitales en el aula.
+                    Observando la creciente necesidad de recursos innovadores y atendiendo a las demandandas de
+                    capacitación docente
+                    para su uso efectivo, decidimos unir nuestras experiencias y conocimientos para crear un espacio
+                    dedicado al desarrollo de
+                    soluciones tecnológicas educativas y a la formación continua de los educadores, impulsando así una
+                    nueva era de
+                    aprendizaje dinámico y significativo.</p>
+            </div>
+            <div className="staff">
+                <h2>Staff</h2>
+                <div className="personas">
+                    <div className="persona">
+                        <img src="/images/a_mature_woman_st_image_.png" alt="Ana Herrera"/>
+                        <h5>Ana Herrera</h5>
+                        <h6>UTN</h6>
+                        <p>Especialista en diseño y desarrollo de software educativo, Ana aporta una sólida base técnica
+                            y una profunda comprensión de las necesidades pedagógicas actuales. Su experiencia en la
+                            Universidad Tecnológica Nacional la posiciona como una líder en la creación de soluciones
+                            tecnológicas innovadoras y eficientes para el ámbito educativo.</p>
+                    </div>
+                    <div className="persona">
+                        <img src="/images/a_middle_aged_man_image_.png" alt="Jorge Garcia"/>
+                        <h5>Jorge García</h5>
+                        <h6>UBA</h6>
+                        <p>Con una destacada trayectoria en investigación educativa y tecnologías del aprendizaje, Jorge
+                            enriquece nuestro equipo con su visión estratégica y su rigurosidad académica. Su paso por
+                            la Universidad de Buenos Aires le otorga una perspectiva integral sobre los desafíos y
+                            oportunidades de la integración tecnológica en diversos contextos educativos.</p>
+                    </div>
+                    <div className="persona">
+                        <img src="/images/a_woman_expert_in_image_.png" alt="Mariana Martinez"/>
+                        <h5>Mariana Martinez</h5>
+                        <h6>UNLP</h6>
+                        <p>Magister en Educación y experta en la implementación de metodologías activas con soporte
+                            tecnológico, Mariana se enfoca en la usabilidad y la pertinencia pedagógica de nuestros
+                            recursos. Su conocimiento de las dinámicas áulicas, adquirido en la Universidad Nacional de
+                            La Plata, garantiza que nuestras herramientas sean prácticas y relevantes para docentes y
+                            estudiantes.</p>
+                    </div>
+                    <div className="persona">
+                        <img src="/images/a_portrait_of_a_ma_image_.png" alt="Fernando Juarez"/>
+                        <h5>Fernando Juarez</h5>
+                        <h6>UAI</h6>
+                        <p>Doctor en Ciencias de la Educación y especialista en formación docente y entornos virtuales
+                            de aprendizaje, Fernando lidera nuestros programas de capacitación. Su experiencia en la
+                            Universidad Abierta Interamericana le permite diseñar propuestas formativas innovadoras y
+                            efectivas, empoderando a los educadores en el uso estratégico de la tecnología.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+    )
+}
