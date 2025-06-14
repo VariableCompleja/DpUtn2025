@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&display=swap");
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.holder {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: darkgrey;
+    padding: 10px 0;
+}
+
+header .holder {
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    color: rgb(40, 39, 39);
+    font-family: "Playwrite DK Loopet", cursive;
+
+    font-size: 48px;
+    font-weight: 550;
+    margin-right: 10px;
+}
+
+nav {
+    background-color: lightslategray;
+    margin: 0px;
+}
+
+nav ul {
+    position: relative;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px;
+}
+
+nav ul li {
+    position: relative;
+    list-style: none;
+}
+
+nav ul li a {
+    font-size: 2em;
+    text-decoration: none;
+    letter-spacing: 2px;
+    line-height: 1em;
+    color: lightgray;
+    -webkit-text-stroke: 0.7px rgba(255, 255, 255, 0.5);
+}
+
+nav ul li a::before {
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 3px solid var(--clr);
+    -webkit-text-stroke: 1px var(--clr);
+}
+
+nav ul li a:hover::before,
+nav ul li a.activo::before {
+    width: 100%;
+    filter: drop-shadow(0 0 25px var(--clr));
+}
+
+nav ul li a.activo {
+    color: var(--clr);
+    -webkit-text-stroke: 3px rgba(255, 255, 255, 0.5);
+}
+
+nav ul li a.activo.novedades,
+a.activo.contacto,
+a.activo.index {
+    color: var(--clr);
+    -webkit-text-stroke: 3px rgba(54, 52, 52, 0.5);
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 1.1em;
+        letter-spacing: 1px;
+    }
+}
+
+footer {
+    background-color: #ccc;
+    clear: both;
+    color: #333;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 20px;
+}
+
+h2 {
+    font-style: italic;
+    font-size: 21px;
+    font-weight: 400;
+    padding-right: 10px;
+}

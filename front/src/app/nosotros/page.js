@@ -1,3 +1,4 @@
+import "@/styles/nosotros.css"
 
 export const metadata={
     title:"Educode::Nosotros",

@@ -1,0 +1,28 @@
+h2.novedades {
+    color: orangered;
+    -webkit-text-stroke: 0.5px orangered;
+}
+
+.novedades h3 {
+    color: darkslategray;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.novedades h4 {
+    color: darkslategray;
+    font-weight: 400;
+    font-style: italic;
+    margin: 3px;
+}
+
+.novedades p {
+    font-weight: 200;
+    margin: 2px;
+}
+
+@media (max-width: 768px){
+    .holder .novedades{
+        padding: 10px;
+    }
+}

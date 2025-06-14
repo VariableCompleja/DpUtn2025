@@ -1,0 +1,74 @@
+main .fotoportada img {
+    width: 100%;
+    padding: 10px;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+main .fotoportada {
+    width: 100%;
+    overflow: hidden;
+}
+
+.columnas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bienvenidos {
+    width: 60%;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.bienvenidos h2 {
+    box-sizing: border-box;
+}
+
+.bienvenidos p {
+    padding: 6px;
+    font-weight: 250;
+}
+
+.recurso {
+    width: 40%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.recurso img {
+    width: 120%;
+    height: auto;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .columnas {
+        flex-direction: column;
+    }
+
+    .bienvenidos {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .recurso {
+        width: 100%;
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .recurso img {
+        max-inline-size: 400px;
+        width: 100%;
+    }
+}

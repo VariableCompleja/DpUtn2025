@@ -1,0 +1,65 @@
+.nosotros h2 {
+    color: crimson;
+    -webkit-text-stroke: 0.5px crimson;
+}
+
+.historia {
+    font-weight: 250;
+}
+
+.personas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.persona {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 23%;
+    text-align: center;
+    padding: 13px;
+    box-sizing: border-box;
+}
+
+.persona img {
+    border-radius: 20px;
+    max-width: 90%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.persona h5,
+.persona h6 {
+    margin: 0;
+    color: crimson;
+}
+
+.persona h5 {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.persona h6 {
+    font-size: 11px;
+    font-style: italic;
+}
+
+.persona p {
+    color: #666;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    .nosotros {
+        padding: 10px;
+    }
+
+    .personas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .persona {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
