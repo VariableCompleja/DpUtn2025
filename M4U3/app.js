@@ -31,6 +31,9 @@ app.use('/gatito', gatitoRouter);
 app.get('/perrito',function(req,res){
   res.send('página del perrito')
 })
+app.get('/mascota',function(req, res){
+  res.send('página de la mascota')
+})
 //fin prueba
 
 // catch 404 and forward to error handler
