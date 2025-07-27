@@ -1,3 +1,7 @@
+.holder .row{
+    justify-content:space-between;    
+}
+
 h2.novedades {
     color: orangered;
     -webkit-text-stroke: 0.5px orangered;
